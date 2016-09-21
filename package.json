@@ -1,0 +1,10 @@
+{
+  "name": "NodeAkka",
+  "version": "0.0.1",
+  "description": "Actor concurrency model implementation framework for Node.js",
+  "engines": {
+    "node": "4.4.x"
+  },
+  "author": "Aishwarya Kaneri"
+
+}
