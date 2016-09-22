@@ -5,7 +5,9 @@
   "engines": {
     "node": "4.4.x"
   },
+  "dependencies": {
+    "async": "^1.0.0"
+  },
   "author": "Aishwarya Kaneri"
-
 }
 
