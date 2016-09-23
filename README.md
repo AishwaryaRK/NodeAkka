@@ -2,6 +2,8 @@
 This is the Actor concurrency model implementation framework for Node.js.
 Work under progress.
 
+Inspired from Pyakka, Akka, drama
+
     Copyright (C) 2016  Aishwarya Kaneri
 
     This program is free software: you can redistribute it and/or modify
