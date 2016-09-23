@@ -49,5 +49,11 @@ var accountantActor = ActorSystem.actorOf({
 }, [mathActor]);
 ```
 
+Send Message to another actor
+
+```javascript
+
+```
+
 ##License
 GNU GPL
