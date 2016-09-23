@@ -1,5 +1,6 @@
-# NodeAkka
-This is the Actor concurrency model implementation framework for Node.js
+# NodeAkka 
+This is the Actor concurrency model implementation framework for Node.js.
+Work under progress.
 
     Copyright (C) 2016  Aishwarya Kaneri
 
@@ -21,6 +22,31 @@ This is the Actor concurrency model implementation framework for Node.js
 ```javascript
 var NodeAkka = require("NodeAkka");
 var ActorSystem = NodeAkka("ActorSystem");
+```
+Create Actor
+
+```javascript
+var mathActor = ActorSystem.actorOf({
+    "add": function (a, b, callback) {
+        console.log(a + b);
+        callback();
+    },
+    "subtract": function (a, b, callback) {
+        console.log(a - b);
+        callback();
+    }
+}, []);
+```
+
+Create Actor having references to other actors
+
+```javascript
+var accountantActor = ActorSystem.actorOf({
+    "manageAccounts": function (callback) {
+        console.log("Accountant actor");
+        callback();
+    }
+}, [mathActor]);
 ```
 
 ##License
