@@ -52,7 +52,7 @@ var accountantActor = ActorSystem.actorOf({
 Send Message to another actor
 
 ```javascript
-
+ActorSystem.sendMessage(new Message(accountantActor, mathActor, {"function": "add", "args": [a, b]}));
 ```
 
 ##License
