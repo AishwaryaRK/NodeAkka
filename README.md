@@ -18,9 +18,10 @@ This is the Actor concurrency model implementation framework for Node.js
     
 ##Usage
 
+```javascript
 var NodeAkka = require("NodeAkka");
 var ActorSystem = NodeAkka("ActorSystem");
-
+```
 
 ##License
 GNU GPL
